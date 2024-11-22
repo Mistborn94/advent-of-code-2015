@@ -6,7 +6,7 @@ import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse.BodyHandlers
 
-private const val YEAR = 2024
+private const val YEAR = 2015
 private const val INPUT_FILE = "input"
 
 fun readDayFile(day: Int, fileName: String): File {
