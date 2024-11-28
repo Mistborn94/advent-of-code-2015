@@ -1,14 +1,13 @@
-package aoc2015.day12
+package day12
 
 import helper.Debug
 
-val numberRegex = "[\\[{:,](-?\\d+)(?=[},\\]])".toRegex()
+val numberRegex = """[\[:,](-?\d+)(?=[},\]])""".toRegex()
 
 fun solveA(text: String, debug: Debug = Debug.Disabled): Int {
     val results = numberRegex.findAll(text)
     return results.sumOf { it.groupValues[1].toInt() }
 }
-
 
 fun solveB(text: String, debug: Debug = Debug.Disabled): Int {
     val (json, _) = parseJson(text)

@@ -1,7 +1,5 @@
 package day12
 
-import aoc2015.day12.solveA
-import aoc2015.day12.solveB
 import helper.Debug
 import helper.readDayFile
 import kotlin.test.Test
