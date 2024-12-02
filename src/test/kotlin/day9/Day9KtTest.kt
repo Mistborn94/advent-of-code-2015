@@ -34,6 +34,6 @@ internal class Day9KtTest {
 
         val solveB = solveB(lines)
         println("B: $solveB")
-        assertEquals(0, solveB)
+        assertEquals(898, solveB)
     }
 }
