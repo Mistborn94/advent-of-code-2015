@@ -26,6 +26,7 @@ tasks.test {
         showExceptions = true
         showCauses = true
     }
+    jvmArgs = listOf("-Xmx4g")
 }
 
 kotlin {
