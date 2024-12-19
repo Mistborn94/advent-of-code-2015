@@ -17,7 +17,7 @@ internal class Day22KtTest {
         Damage: 8
         """.trimIndent().trimEnd()
 
-        assertEquals(226, solveA(text, Debug.Enabled, yourHp = 10, yourMana = 250))
+        assertEquals(226, solveA(text, Debug.Disabled, yourHp = 10, yourMana = 250))
     }
 
     @Test
@@ -27,18 +27,18 @@ internal class Day22KtTest {
         Damage: 8
         """.trimIndent().trimEnd()
 
-        assertEquals(641, solveA(text, Debug.Enabled, yourHp = 10, yourMana = 250))
+        assertEquals(641, solveA(text, Debug.Disabled, yourHp = 10, yourMana = 250))
     }
 
     @Test
     fun solve() {
         val lines = readDayFile(day, "input").readText().trimEnd()
 
-        val solveA = solveA(lines, debug = Debug.Enabled)
+        val solveA = solveA(lines, debug = Debug.Disabled)
         println("A: $solveA")
         assertEquals(900, solveA)
 
-        val solveB = solveB(lines, debug = Debug.Enabled)
+        val solveB = solveB(lines, debug = Debug.Disabled)
         println("B: $solveB")
 
         assertEquals(1216, solveB)
